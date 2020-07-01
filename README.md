@@ -6,7 +6,7 @@ The game was inspired by [The Powder Toy](https://github.com/The-Powder-Toy/The-
 
 ## Controls
 
-| | |
+| Input | Effect |
 | - | - |
 | W/A/S/D | Move up/left/down/right
 | 1-7 | Select element
