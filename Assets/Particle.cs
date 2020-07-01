@@ -207,7 +207,7 @@ public class Particle : MonoBehaviour
         if (spaceAbove != 0)
             cloneType = spaceAbove;
 
-        if (cloneType > 1 && cloneType < 6)
+        if (cloneType > 1 && cloneType < 6 || cloneType > 10)
         {
             int i = 0;
             byte nextSpace = 7;
