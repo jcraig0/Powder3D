@@ -2,6 +2,7 @@
 using static ParticleMap;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Linq;
 
 public class Spawn : MonoBehaviour
 {
@@ -31,7 +32,8 @@ public class Spawn : MonoBehaviour
         else if (Input.GetKeyDown(KeyCode.R))
         {
             InitParticleMap();
-            var particles = Resources.FindObjectsOfTypeAll<Particle>();
+            var particles = Resources.FindObjectsOfTypeAll<Particle>()
+                .Where(particle => particle.gameObject.name.Contains("Clone"));
             foreach (var particle in particles)
                 Destroy(particle.gameObject);
             UpdateNumParticles(-numParticles);
@@ -43,7 +45,7 @@ public class Spawn : MonoBehaviour
         }
 
         byte origParticleType = particleType;
-        for (byte i = 1; i <= 10; i++)
+        for (byte i = 1; i <= 7; i++)
         {
             if (Input.GetKeyDown((KeyCode)i + 48))
                 particleType = i;
