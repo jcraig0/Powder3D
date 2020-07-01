@@ -10,6 +10,7 @@ The game was inspired by [The Powder Toy](https://github.com/The-Powder-Toy/The-
 | - | - |
 | W/A/S/D | Move up/left/down/right
 | 1-7 | Select element
+| Move mouse | Pan camera
 | Left click | Add particle(s)
 | Scroll | Change brush size
 | Right click | Erase particle(s)
