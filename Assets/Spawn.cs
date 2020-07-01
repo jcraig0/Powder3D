@@ -24,12 +24,7 @@ public class Spawn : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Escape))
             Application.Quit();
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            paused = !paused;
-            GameObject.Find("Paused").GetComponent<Text>().enabled = paused;
-        }
-        else if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R))
         {
             InitParticleMap();
             var particles = Resources.FindObjectsOfTypeAll<Particle>()
@@ -37,6 +32,11 @@ public class Spawn : MonoBehaviour
             foreach (var particle in particles)
                 Destroy(particle.gameObject);
             UpdateNumParticles(-numParticles);
+        }
+        else if (Input.GetKeyDown(KeyCode.P))
+        {
+            paused = !paused;
+            GameObject.Find("Paused").GetComponent<Text>().enabled = paused;
         }
         else if (Input.GetKeyDown(KeyCode.L))
         {
