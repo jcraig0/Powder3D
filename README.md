@@ -2,9 +2,7 @@
 
 This is a demo version of a three-dimensional falling sand game, made with the Unity engine. The player can select from seven elements with different behaviors: Wall, Powder, Water, Gas, Fire, Light, and Clone.
 
-Watch a demo video:
-
-[![](https://i9.ytimg.com/vi/oScfPFXofTA/mq1.jpg?sqp=CPicjvgF&rs=AOn4CLA4DJa8jxBpuw1ZRngvXPadCfjuVg)](https://youtu.be/oScfPFXofTA)
+Watch a [demo video](https://youtu.be/oScfPFXofTA).
 
 The game was inspired by [The Powder Toy](https://github.com/The-Powder-Toy/The-Powder-Toy), created by Stanislaw Skowronek. The behavior for the Powder and Water elements is mostly from [Sandspiel](https://github.com/maxbittker/sandspiel), by Max Bittker.
 
